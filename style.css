@@ -1,0 +1,117 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* @font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4kaVIGxA.woff2");
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-content: stretch; */
+  padding: 5px 10vw;
+  background-color: rgb(230, 230, 230);
+  text-align: center;
+}
+
+nav a {
+  flex: 1;
+  font-size: 1rem;
+  padding: 0px 10px;
+  /* border: 0px solid; */
+  /* border-radius: 5px; */
+  /* background-color: white; */
+  margin: 5px;
+  /* text-decoration: none; */
+  transition: flex 1.5s, background-color 0.5s;
+}
+nav a:hover {
+  /* background-color: rgb(245, 245, 245); */
+  /* padding: 5px 35px; */
+  /* flex: 2.53; */
+  color: white;
+  /* text-decoration: none; */
+}
+nav a:active {
+  color: black;
+}
+footer {
+  padding: 5px 10vw 20px;
+  background-color: rgb(200, 200, 200);
+  margin-top: 3rem;
+}
+
+.photo {
+  border: 0 solid white;
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+  border-bottom: thin solid rgb(200, 200, 200);
+  padding-bottom: 0%;
+  margin-top: 3rem;
+  line-height: 1.1rem;
+}
+h1,
+h2 {
+  color: rgb(150, 150, 150);
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+footer h2 {
+  border: none;
+  margin-top: -1.4rem;
+}
+ol li {
+  margin-left: 1rem;
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  padding: 0 10vw;
+}
+.content > section {
+  flex: 1;
+  text-align: center;
+  /* width: 30vw; */
+  /* border: 0 solid; */
+  /* box-shadow: inset rgb(100, 100, 100); */
+}
+.content .main {
+  flex: 3;
+}
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: stretch;
+  padding-left: 5vw;
+  /* width: 48vw; */
+}
+section {
+  /* padding: 0vw; */
+}
+@media screen and (max-width: 600px) {
+  .content {
+    flex-flow: column;
+  }
+  .main {
+    padding-left: 0%;
+  }
+}
