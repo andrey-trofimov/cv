@@ -130,14 +130,12 @@ footer li {
   margin-right: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .content {
-    flex-flow: column;
-    flex-wrap: nowrap;
+    display: block;
   }
 
   .main {
-    /* flex: auto; */
-    padding-left: 0%;
+    padding-left: 0;
   }
 }
