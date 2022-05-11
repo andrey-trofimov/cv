@@ -90,6 +90,7 @@ ul li {
 ol li,
 ul li,
 p {
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
@@ -106,13 +107,13 @@ p {
   /* border: 0 solid; */
   /* box-shadow: inset rgb(100, 100, 100); */
 }
-.content .main {
+.main {
   flex: 3;
 }
 .main {
-  display: flex;
+  /* display: flex;
   flex-flow: column wrap;
-  align-content: stretch;
+  align-content: stretch; */
   padding-left: 5vw;
   /* width: 48vw; */
 }
@@ -132,8 +133,11 @@ footer li {
 @media screen and (max-width: 600px) {
   .content {
     flex-flow: column;
+    flex-wrap: nowrap;
   }
+
   .main {
+    /* flex: auto; */
     padding-left: 0%;
   }
 }
